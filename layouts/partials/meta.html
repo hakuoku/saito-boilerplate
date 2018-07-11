@@ -1,0 +1,16 @@
+
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:description" content="{{ if .IsHome}}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+<meta property="og:image" content="{{ if .IsHome }}{{ .Site.BaseURL }}/media/twitter-card.jpg{{ else }}{{ .Site.BaseURL }}{{ $.Param "thumbnail" }}{{ end }}" />
+
+{{ with .Site.Params.twitter }}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ . }}" />
+{{ end }}
+
+{{ with .Site.Params.fb_app_id }}
+    <meta property="fb:app_id" content="{{ . }}" />
+{{ end }}

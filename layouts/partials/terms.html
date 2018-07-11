@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <ul class="terms">
+        {{ $data := .Data }} {{ range $key, $value := .Data.Terms.ByCount }}
+        <li class="terms__item">
+            <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }} </li>
+        {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+</div>

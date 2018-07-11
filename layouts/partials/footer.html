@@ -1,0 +1,14 @@
+<footer id="footer">
+    <div class="container">
+        <ul class="footer-contents">
+            {{ range .Site.Params.footer }}
+                {{ if ne .url false }}
+                    <li class="footer-contents__item"><a href="{{ .url }}">{{ .name }}</a></li>
+                {{ else }}
+                    <li class="footer-contents__item">{{ .name }}</li>
+                {{ end }}
+            {{ end }}
+        </ul>
+        <p>© {{ .Site.LastChange.Format "2006" }} {{ .Site.Author.name }} All Rights Reserved ･ Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="">Saito Boilerplate</a>.</p>
+    </div>
+</footer>

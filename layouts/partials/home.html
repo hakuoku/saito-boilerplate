@@ -1,0 +1,10 @@
+<div class="container">
+ {{ range where .Data.Pages "Section" "home" }}
+        <article class="post post--{{ .Params.class }}">
+            <h2 class="post__title">{{ .Title }}</h2>
+            <section class="post__content">
+                {{ .Content }}
+            </section>
+        </article>
+    {{ end }}
+</div>

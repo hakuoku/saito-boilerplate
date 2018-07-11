@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.description }}<meta name="description" content="{{ block "description" . }}{{ . }}{{ end }}">{{ end }}
+{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}
+
+<base href="{{ .Site.BaseURL }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ partial "css.html" . }}
+
+<link rel="icon" type="image/png" href="{{ "/img/favicon-32x32.png" | absURL }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ "/img/favicon-16x16.png" | absURL }}" sizes="16x16">
+<link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | absURL }}" sizes="180x180">
+
+{{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
+
+{{ .Hugo.Generator }}

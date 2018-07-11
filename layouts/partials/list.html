@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <ul>
+        {{ range .Paginator.Pages }}
+        <li>
+            <span>{{ .Date.Format "2006. 1. 2" }}</span>
+            <a href="{{ .URL }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ partial "pagination.html" . }}
+</div>

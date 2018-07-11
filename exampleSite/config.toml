@@ -1,0 +1,57 @@
+baseurl = "http://www.example.com"
+languageCode = "ja"
+title = "Saito Boilerplate"
+theme = "saito_boilerplate"
+
+canonifyurls = true
+paginate = 3
+publishDir = "docs" # if you use GitHub to deploy
+disqusShortname = "yourdisqusshortname"
+googleAnalytics = "UA-123-45"
+
+[params]
+    description = "Conan Doyle's personal website"
+    keywords = "mystery, history, medicine"
+
+[author]
+    name = "Sir Arthur Canan Doyle"
+
+[social]
+    twitter = "BakerStJournal"
+    facebook = ""
+    facebook_admin = ""
+    linkedin = ""
+    instagram = ""
+    googleplus = ""
+    github = ""
+    gitlab = ""
+    pinterest = ""
+    tumblr = ""
+    vimeo = ""
+    youtube = ""
+
+# if you want markdown WYSIWYG line break
+[blackfriday]
+    extensions = ["hardLineBreak"]
+
+# main menu
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+[[menu.main]]
+    name = "Works"
+    url = "/works-index/"
+    weight = 2
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
+# Add footer contents here
+[[params.footer]]
+    name = "221B, Baker Street"
+    url = false
+[[params.footer]]
+    name = "Mail"
+    url = "mailto:"

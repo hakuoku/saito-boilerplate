@@ -3,11 +3,11 @@
 
 name = "Saito Boilerplate"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/hakuoku/hugo-saito-boilerplate/blob/master/LICENSE"
 description = "Static website boilerplate for designers & everyone"
-homepage = "http://example.com/"
+homepage = "https://github.com/hakuoku/hugo-saito-boilerplate"
 tags = ["boilerplate", "personal", "portfolio", "documentation"]
-features = ["disqus", "Font Awesome", "favicon", "Twitter card", "Facebook OGP"]
+features = ["disqus", "Font Awesome", "favicon", "Twitter card", "opengraph"]
 min_version = "0.41"
 
 [author]
@@ -16,6 +16,6 @@ min_version = "0.41"
 
 # If porting an existing theme
 [original]
-  name = "Luiz F. A. de Prá"
+  name = "Coder"
   homepage = "https://luizdepra.com"
   repo = "https://github.com/luizdepra/hugo-coder/"

@@ -2,7 +2,7 @@
 title = '{{ replace .Name "-" " " | title }}'
 date = "{{ .Date }}"
 class = ""
-images = ""
+images = []
 tags = []
 categories = []
 +++

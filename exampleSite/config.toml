@@ -1,5 +1,5 @@
 baseurl = "http://www.example.com"
-languageCode = "ja"
+languageCode = "en-us"
 title = "Saito Boilerplate"
 theme = "saito_boilerplate"
 
@@ -12,9 +12,10 @@ googleAnalytics = "UA-123-45"
 [params]
     description = "Conan Doyle's personal website"
     keywords = "mystery, history, medicine"
+    images = []
 
 [author]
-    name = "Sir Arthur Canan Doyle"
+    name = "Sir Arthur Conan Doyle"
 
 [social]
     twitter = "BakerStJournal"

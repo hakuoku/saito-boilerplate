@@ -12,7 +12,7 @@ googleAnalytics = "UA-123-45"
 [params]
     description = "Conan Doyle's personal website"
     keywords = "mystery, history, medicine"
-    images = []
+    images = [""]
 
 [author]
     name = "Sir Arthur Conan Doyle"

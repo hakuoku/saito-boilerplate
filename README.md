@@ -1,7 +1,7 @@
 Saito(pronunciation of 'site' in Japanese) Boilerplate is static website boilerplate for designers and everyone.
 
 ## Features
-- Flexibility for build any type of website.(personal, portfolio, documentation...)
+- Flexibility for building any type of website.(personal, portfolio, documentation...)
 - Social links（Twitter,Facebook,Instagram,Google+,GitHub,GitLab,Pinterest,Tumblr,Vimeo,YouTube,Linkedin）
 - Twitter & Facebook card
 - Disqus
@@ -26,8 +26,8 @@ Add the following lines to your config.toml according to your need.
 
 ```toml
 baseurl = "http://www.example.com"
-languageCode = "en-us" # change to your language
-DefaultContentLanguage = "en-us"
+languageCode = "en-us"
+DefaultContentLanguage = "en-us" # change to your language
 title = "Your Site Title"
 theme = "saito_boilerplate"
 

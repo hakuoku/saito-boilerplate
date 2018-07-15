@@ -1,7 +1,7 @@
 Saito(pronunciation of 'site' in Japanese) Boilerplate is static website boilerplate for designers and everyone.
 
 ## Features
-- Flexibility for build any style of website.(personal, portfolio, documentation...)
+- Flexibility for build any type of website.(personal, portfolio, documentation...)
 - Social links（Twitter,Facebook,Instagram,Google+,GitHub,GitLab,Pinterest,Tumblr,Vimeo,YouTube,Linkedin）
 - Twitter & Facebook card
 - Disqus
@@ -17,7 +17,7 @@ git clone https://github.com/hakuoku/hugo-saito-boilerplate.git themes/saito_boi
 
 and add your config.toml
 
-```
+```toml
 theme = "saito_boilerplate"
 ```
 
@@ -46,7 +46,7 @@ googleAnalytics = "UA-123-45" # to enable Disqus and Google Analytics
 [author]
     name = "Sir Arthur Conan Doyle"
 
-[social] #to enable social links, add your account names
+[social] # to enable social links, add your account names
     twitter = "BakerStJournal"
     facebook = ""
     facebook_admin = "" # enables facebook opengraph
@@ -120,8 +120,20 @@ Or you can add custom stylesheets and CDN links as many as you want. Copy `css.h
 
 For custom js files, follow the same steps above.
 
+### Favicons
+Name your favicons `favicon-16x16.png`, `favicon-32x32.png` and `apple-touch-icon.png`(180 × 180) and place them `/static/img` directory.
+
+### Twitter card and opengraph
+To enable Twitter card and Facebook og, add Twitter account name and Facebook App ID in [social] section in `config.toml`.
+
+And then set `images` value in site and individual post's params.
+
+```toml
+images = ["/img/thumbnail01.png"]
+```
+
 ## License
 Saito Boilerplate is licensed under the MIT license.
 
 ## Special Thanks
-This project is highly inspired by [CSS Zen Garden](http://csszengarden.com/). Pay a visit to experience the beauty of CSS design.
+This project is deeply inspired by [CSS Zen Garden](http://csszengarden.com/). Pay a visit to experience the beauty of CSS design.

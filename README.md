@@ -1,5 +1,7 @@
 Saito(pronunciation of 'site' in Japanese) Boilerplate is static website boilerplate for designers and everyone.
 
+![](https://github.com/hakuoku/hugo-saito-boilerplate/blob/master/images/screenshot.png)
+
 ## Features
 - Flexibility for building any type of website.(personal, portfolio, documentation...)
 - Social links（Twitter,Facebook,Instagram,Google+,GitHub,GitLab,Pinterest,Tumblr,Vimeo,YouTube,Linkedin）

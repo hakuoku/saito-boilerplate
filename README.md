@@ -117,7 +117,7 @@ Saito Boilerplate's CSS should be placed on `/static/css/style.css`. If you use 
 Or you can add custom stylesheets and CDN links as many as you want. Copy `css.html` from `/themes/saito_boilerplate/layouts/partials` into `/layouts/partials` directory and add links to your stylesheets.
 
 ```html
-<link rel="stylesheet" href="{{ '/css/mystyle.css' | absURL }}">
+<link rel="stylesheet" href="{{ 'css/mystyle.css' | absURL }}">
 ```
 
 For custom js files, follow the same steps above.

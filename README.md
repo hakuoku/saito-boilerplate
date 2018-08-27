@@ -4,7 +4,7 @@ Saito(pronunciation of 'site' in Japanese) Boilerplate is static website boilerp
 
 ## Features
 - Flexibility for building any type of website.(personal, portfolio, documentation...)
-- Social links（Twitter,Facebook,Instagram,Google+,GitHub,GitLab,Pinterest,Tumblr,Vimeo,YouTube,Linkedin）
+- Social links（Twitter, Facebook, Instagram, Google+, GitHub, GitLab, Pinterest, Tumblr, Vimeo, YouTube, Linkedin）
 - Twitter & Facebook card
 - Disqus
 - Google Analytics
@@ -14,13 +14,13 @@ Saito(pronunciation of 'site' in Japanese) Boilerplate is static website boilerp
 In your Hugo project directory, run
 
 ```
-git clone https://github.com/hakuoku/hugo-saito-boilerplate.git themes/saito_boilerplate
+git clone https://github.com/hakuoku/saito-boilerplate.git themes/saito-boilerplate
 ```
 
 and add your config.toml
 
 ```toml
-theme = "saito_boilerplate"
+theme = "saito-boilerplate"
 ```
 
 ## Configuration
@@ -31,7 +31,7 @@ baseurl = "http://www.example.com"
 languageCode = "en-us"
 DefaultContentLanguage = "en-us" # change to your language
 title = "Your Site Title"
-theme = "saito_boilerplate"
+theme = "saito-boilerplate"
 
 hasCJKLanguage = false # if your site has CJK language, set true
 canonifyurls = true

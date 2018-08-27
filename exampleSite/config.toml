@@ -1,7 +1,7 @@
 baseurl = "http://www.example.com"
 languageCode = "en-us"
 title = "Saito Boilerplate"
-theme = "saito_boilerplate"
+theme = "saito-boilerplate"
 
 canonifyurls = true
 paginate = 3
